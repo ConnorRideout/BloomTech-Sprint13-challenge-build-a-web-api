@@ -17,7 +17,7 @@ async function validateId(req, res, next) {
 
 function validateBody(validateCompleted = false) {
     return function (req, res, next) {
-        const validate = (item) => {
+        const validate = item => {
             return (
                 item &&
                 typeof item === 'string' &&
